@@ -1,0 +1,9 @@
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\bin\Debug\WaiGua.exe.config
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\bin\Debug\WaiGua.exe
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\bin\Debug\WaiGua.pdb
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.csprojResolveAssemblyReference.cache
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.Form1.resources
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.Properties.Resources.resources
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.csproj.GenerateResource.Cache
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.exe
+c:\users\子豪\documents\visual studio 2013\Projects\WaiGua\WaiGua\obj\Debug\WaiGua.pdb

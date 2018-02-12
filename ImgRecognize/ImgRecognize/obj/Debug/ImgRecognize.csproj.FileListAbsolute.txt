@@ -1,0 +1,6 @@
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\bin\Debug\ImgRecognize.exe.config
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\obj\Debug\ImgRecognize.csprojResolveAssemblyReference.cache
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\bin\Debug\ImgRecognize.exe
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\bin\Debug\ImgRecognize.pdb
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\obj\Debug\ImgRecognize.exe
+c:\users\子豪\documents\visual studio 2013\Projects\ImgRecognize\ImgRecognize\obj\Debug\ImgRecognize.pdb

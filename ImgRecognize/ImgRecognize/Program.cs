@@ -46,9 +46,20 @@ namespace ImgRecognize
         static void SetSwipe()
         {
             Random random = new Random();
-            swipe_X1 = random.Next() % 720 + 200;
-            swipe_Y1 = random.Next() % 1500 + 300;
+            swipe_X1 = ImgRecognize.width / 2 + random.Next(-ImgRecognize.width * 3 / 8, ImgRecognize.width * 3 / 8);
+            swipe_Y1 = random.Next(-100, 100) + 1600*ImgRecognize.height/1920;
             swipe_X2 = swipe_X1; swipe_Y2 = swipe_Y1;
+        }
+
+        static void SetButton()
+        {
+                Random random = new Random();
+                int left = (ImgRecognize.width / 2);
+                int top = 1584 *ImgRecognize.height/1920;
+                left +=random.Next(-50,50);
+                top +=random.Next(-10,10);
+                swipe_X1 = left; swipe_X2 = left;
+                swipe_Y1 = top; swipe_Y2 = top;
         }
 
         static void PullScreenShot()
@@ -93,10 +104,19 @@ namespace ImgRecognize
                 PullScreenShot();
                 Thread.Sleep(500);
                 Bitmap bitmap = (Bitmap)Image.FromFile(@"temp.png");
-                hoverTime = (int)(1.45 * ImgRecognize.FindBoard_1(bitmap).GetDistance());
+                ImgRecognize.Result res=ImgRecognize.FindBoard_1(bitmap);
                 bitmap.Dispose();
-                Console.WriteLine("HoverTime:" + hoverTime.ToString()+"\n");
-                SetSwipe();
+                if(res!=null){
+                    hoverTime = (int)(1.45 * (double)res.GetDistance());
+                    Console.WriteLine("HoverTime:" + hoverTime.ToString()+"\n");
+                    SetSwipe();
+                }
+                else
+                {
+                    hoverTime = 100;
+                    Console.WriteLine("Restart");
+                    SetButton();
+                }
                 Jump();
                 Thread.Sleep(hoverTime+500);
             }

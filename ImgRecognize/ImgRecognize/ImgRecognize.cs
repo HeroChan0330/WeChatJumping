@@ -18,7 +18,7 @@ namespace ImgRecognize
         static Color BackgroundColor;
         static bool[,] possiblePoint;
 
-        public struct Result
+        public class Result
         {
             public int boardX;
             public int boardY;
@@ -261,9 +261,21 @@ namespace ImgRecognize
             return bm;
         }
         */
+
+        public static bool CheckRestart()
+        {
+            if (pixels[0, width / 2].GetBrightness() < 0.5) return true;
+            return false;
+        }
+
         public static Result FindBoard_1(Bitmap bitmap)
         {
             Point piecePos=FindPiece(bitmap);
+            if (CheckRestart())
+            {
+                Console.WriteLine("Target Found!!!");
+                return null;
+            }
             Bitmap bm = new Bitmap(bitmap);
             int xMin1 = piecePos.X, yMin1 = piecePos.Y;
             int y=piecePos.Y;
@@ -392,7 +404,7 @@ namespace ImgRecognize
             //}
             Result res = new Result(piecePos.X, piecePos.Y, xMid, yMid);
            //    return bm;
-            Console.WriteLine("Target Found!!!");
+
             Console.WriteLine(string.Format("Piece pos({0},{1}) BoradPos({2},{3})",piecePos.X,piecePos.Y,xMid,yMid));
             
             return res;

@@ -9,3 +9,4 @@
 
 自动跳：项目ImgRecognize 执行文件在ImgRecognize\ImgRecognize\bin\Debug\ImgRecognize.exe 有一部分为训练数据
 手动跳 项目WaiGuaWaiGua\bin\Debug\WaiGua.exe
+只在小米5上测试过，需要自行调试悬浮时间/像素比例 以及设置屏幕分辨率。
